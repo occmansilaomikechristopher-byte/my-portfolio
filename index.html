@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | React JS & React Native Developer</title>
+    <meta name="description" content="Modern personal portfolio for a React JS and React Native developer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating decorative background shapes -->
+    <div class="shape-layer" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+        <span class="shape shape-5"></span>
+    </div>
+
+    <header class="topbar glass">
+        <div class="container topbar-content">
+            <a href="#hero" class="brand">Portfolio</a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <p class="eyebrow fade-in">Creative Frontend Developer</p>
+                <h1 class="fade-in delay-1">Portfolio</h1>
+                <h2 class="fade-in delay-2">React JS & React Native Developer</h2>
+                <p class="hero-intro fade-in delay-3">
+                    I build fast, responsive, and user-focused applications with clean UI, scalable frontend architecture,
+                    and smooth digital experiences across web and mobile platforms.
+                </p>
+                <div class="hero-profile fade-in delay-4">
+                    <img src="assets/profile.jpg" alt="Developer profile image">
+                </div>
+                <a href="#projects" class="btn btn-primary fade-in delay-5">Explore My Work</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section reveal">
+            <div class="container">
+                <h3 class="section-title">About</h3>
+                <div class="about-grid">
+                    <article class="glass card about-card">
+                        <p>
+                            I’m a <strong>vibe coder</strong> and frontend developer crafting clean, high-impact products with
+                            <strong>React JS</strong> and <strong>React Native</strong>. I turn ideas into polished experiences through
+                            <strong>JavaScript</strong>, <strong>REST API Integration</strong>, and <strong>UI/UX Focused Development</strong>
+                            so every interface feels intuitive, modern, and fast.
+                        </p>
+                    </article>
+
+                    <article class="glass card skills-progress-card">
+                        <h4>Core Expertise</h4>
+                        <div class="progress-group">
+                            <div class="progress-item">
+                                <div class="progress-labels">
+                                    <span>React JS</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress-track"><span class="progress-fill" data-width="92%"></span></div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-labels">
+                                    <span>React Native</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-track"><span class="progress-fill" data-width="88%"></span></div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-labels">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-track"><span class="progress-fill" data-width="90%"></span></div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-labels">
+                                    <span>REST API Integration</span>
+                                    <span>86%</span>
+                                </div>
+                                <div class="progress-track"><span class="progress-fill" data-width="86%"></span></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section reveal">
+            <div class="container">
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-grid">
+                    <article class="glass card skill-card">React JS</article>
+                    <article class="glass card skill-card">React Native</article>
+                    <article class="glass card skill-card">JavaScript (ES6+)</article>
+                    <article class="glass card skill-card">HTML5</article>
+                    <article class="glass card skill-card">CSS3</article>
+                    <article class="glass card skill-card">Tailwind CSS</article>
+                    <article class="glass card skill-card">Git & GitHub</article>
+                    <article class="glass card skill-card">API Integration</article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section reveal">
+            <div class="container">
+                <div class="section-row">
+                    <h3 class="section-title">Projects</h3>
+                    <div class="carousel-controls" aria-label="Project slider controls">
+                        <button class="carousel-btn" id="prevProject" type="button" aria-label="Previous project">◀</button>
+                        <button class="carousel-btn" id="nextProject" type="button" aria-label="Next project">▶</button>
+                    </div>
+                </div>
+
+                <div class="projects-carousel" id="projectsCarousel">
+                    <div class="projects-track" id="projectsTrack">
+                        <article class="glass card project-card">
+                            <img class="project-image" src="assets/projects/posinventory.png" alt="Dashboard project preview">
+                            <h4>POS & Inventory System</h4>
+                            <p>Retail operations platform with product tracking, sales flow, and inventory analytics.</p>
+                            <small>React + API</small>
+                            <div class="project-actions">
+                                <a href="assets/projects/posinventory.png" target="_blank" class="btn btn-secondary">View Project</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </article>
+
+                        <article class="glass card project-card">
+                            <img class="project-image" src="assets/projects/dashboard.png" alt="Inventory management project preview">
+                            <h4>Payroll Management System</h4>
+                            <p>Automated payroll calculator with employee records, attendance, and salary summary reports.</p>
+                            <small>React + JavaScript</small>
+                            <div class="project-actions">
+                                <a href="assets/projects/dashboard.png" target="_blank" class="btn btn-secondary">View Project</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </article>
+
+                        <article class="glass card project-card">
+                            <img class="project-image" src="assets/projects/mobile-version.jpg" alt="Attendance module project preview">
+                            <h4>Mobile App using React Native</h4>
+                            <p>Cross-platform app with clean UI, reusable components, and API-powered dynamic content.</p>
+                            <small>React Native + REST API</small>
+                            <div class="project-actions">
+                                <a href="assets/projects/mobile-version1.jpg" target="_blank" class="btn btn-secondary">View Project</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </article>
+
+                        <article class="glass card project-card">
+                            <img class="project-image" src="assets/projects/inventory.png" alt="POS screen project preview">
+                            <h4>Data Dashboard</h4>
+                            <p>Interactive dashboard with chart visualizations, API data feeds, and responsive analytics cards.</p>
+                            <small>React + Charts</small>
+                            <div class="project-actions">
+                                <a href="assets/projects/inventory.png" target="_blank" class="btn btn-secondary">View Project</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section reveal">
+            <div class="container">
+                <h3 class="section-title">Experience</h3>
+                <div class="timeline">
+                    <article class="glass card timeline-item">
+                        <h4>Freelance React Developer</h4>
+                        <p>Built responsive web apps and maintained client-facing frontend modules.</p>
+                    </article>
+                    <article class="glass card timeline-item">
+                        <h4>Academic Capstone Projects</h4>
+                        <p>Developed full-featured systems including POS and payroll applications.</p>
+                    </article>
+                    <article class="glass card timeline-item">
+                        <h4>API Development Experience</h4>
+                        <p>Integrated REST APIs for dynamic data, authentication flows, and state-driven UIs.</p>
+                    </article>
+                    <article class="glass card timeline-item">
+                        <h4>UI/UX Design Experience</h4>
+                        <p>Designed user-centered interfaces focused on clarity, accessibility, and visual consistency.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section reveal">
+            <div class="container">
+                <h3 class="section-title">Contact</h3>
+                <div class="contact-grid">
+                    <form class="glass card contact-form" action="#" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Let's build something amazing." required></textarea>
+
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                    </form>
+
+                    <aside class="glass card social-card">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub" class="social-link">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.89c-2.78.61-3.37-1.18-3.37-1.18a2.66 2.66 0 0 0-1.12-1.46c-.91-.62.07-.61.07-.61a2.1 2.1 0 0 1 1.54 1 2.14 2.14 0 0 0 2.92.84 2.13 2.13 0 0 1 .64-1.34c-2.22-.25-4.56-1.11-4.56-4.95a3.88 3.88 0 0 1 1-2.69 3.61 3.61 0 0 1 .1-2.66s.84-.27 2.75 1a9.43 9.43 0 0 1 5 0c1.91-1.29 2.75-1 2.75-1a3.61 3.61 0 0 1 .1 2.66 3.88 3.88 0 0 1 1 2.69c0 3.85-2.34 4.7-4.57 4.95a2.37 2.37 0 0 1 .68 1.84v2.73c0 .27.18.58.69.48A10 10 0 0 0 12 2"></path></svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12M5.56 9.75h2.76V18H5.56zm4.37 0h2.64v1.13h.04a2.89 2.89 0 0 1 2.6-1.42c2.78 0 3.29 1.83 3.29 4.21V18h-2.75v-3.85c0-.92-.02-2.1-1.28-2.1-1.28 0-1.48 1-1.48 2.03V18H9.93z"></path></svg>
+                            </a>
+                            <a href="mailto:you@example.com" aria-label="Email" class="social-link">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2m0 2v.01L12 13l8-4.99V8z"></path></svg>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Portfolio. All rights reserved.</p>
+            <button id="backToTop" class="btn btn-outline" type="button" aria-label="Back to top">Back to Top</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
