@@ -6,5 +6,5 @@ const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'my-portf
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_ACTIONS ? `/${repositoryName}/` : '/',
+  base: process.env.GITHUB_ACTIONS ? `/${repositoryName}/react-app/` : '/',
 })
